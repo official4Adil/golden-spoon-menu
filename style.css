@@ -17,8 +17,8 @@ a{color:inherit}
 .top{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 12px) 24px 12px;transition:background .3s}
 .top.solid{background:#08110ee6;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .brand{font-size:24px;text-decoration:none;color:var(--gold2);letter-spacing:.04em;display:flex;align-items:center;gap:10px}
-.logo{height:40px;width:auto;display:block}
-.hlogo{display:block;height:clamp(90px,16vw,130px);width:auto;max-width:70%;margin:0 auto 14px;object-fit:contain}
+.logo{width:44px;height:44px;border-radius:50%;object-fit:contain;padding:4px;background:#0d1915;border:1.5px solid var(--gold);display:block}
+.hlogo{display:block;width:clamp(110px,26vw,150px);height:clamp(110px,26vw,150px);border-radius:50%;object-fit:contain;padding:12px;background:#0d1915;border:1.5px solid var(--gold);box-shadow:0 0 0 6px #08110e,0 0 0 7px #c9ad7255,0 18px 40px #000a;margin:0 auto 20px}
 .call{text-decoration:none;font-size:14px;border:1px solid var(--gold);color:var(--gold2);padding:7px 18px;border-radius:99px;transition:.2s}
 .call:hover{background:var(--gold);color:#101008}
 

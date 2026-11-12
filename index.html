@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="icon" href="images/logo.png">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Restaurant","name":"The Golden Spoon","servesCuisine":["Indian","Chinese","Continental"],"telephone":"+919591370227","address":{"@type":"PostalAddress","streetAddress":"Kuntalpadi","addressLocality":"Karkala","addressRegion":"Karnataka","postalCode":"574104","addressCountry":"IN"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:30","closes":"15:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"19:00","closes":"23:00"}]}
@@ -19,13 +20,14 @@
 </head>
 <body>
 <header class="top" id="top">
-  <a class="brand" href="#">The Golden Spoon</a>
+  <a class="brand" href="#"><img class="logo" src="images/logo.png" alt="" onerror="this.remove()"><span>The Golden Spoon</span></a>
   <a class="call" id="callTop" href="#visit">Visit us</a>
 </header>
 
 <section class="hero">
   <div class="frame"></div>
   <div class="hero-in">
+    <img class="hlogo" src="images/logo.png" alt="The Golden Spoon logo" onerror="this.remove()">
     <p class="hello" id="hHello"></p>
     <h1 id="hName"></h1>
     <div class="orn"><span></span><i>❖</i><span></span></div>
@@ -33,7 +35,7 @@
     <p class="intro" id="hIntro"></p>
     <p class="status" id="hStatus"></p>
     <div class="badges" id="hBadges"></div>
-    <div class="hbtn"><a class="btn" href="#menu">Take a look at the menu</a><button class="btn ghost" id="surprise" type="button">Surprise me</button></div>
+    <div class="hbtn"><a class="btn" href="#menu">Take a look at the menu</a></div>
   </div>
 </section>
 

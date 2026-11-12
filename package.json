@@ -1,0 +1,11 @@
+{
+  "name": "golden-spoon-menu",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "images": "node scripts/fetch-images.mjs",
+    "audio": "node scripts/generate-audio.mjs",
+    "dev": "npx serve ."
+  }
+}

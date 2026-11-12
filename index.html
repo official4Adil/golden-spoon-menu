@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Golden Spoon | Menu · Kuntalpadi, Karkala</title>
+<meta name="description" content="Indian and tandoor, Chinese, Continental, desserts and beverages at The Golden Spoon, Kuntalpadi, Karkala. Halal meat, separate vegetarian preparation, takeaway available.">
+<meta name="theme-color" content="#0c0907">
+<meta property="og:title" content="The Golden Spoon: Flavours for Every Table">
+<meta property="og:description" content="Browse the full menu with photos and spoken descriptions.">
+<meta property="og:type" content="restaurant.menu">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"The Golden Spoon","servesCuisine":["Indian","Chinese","Continental"],"telephone":"+919591370227","address":{"@type":"PostalAddress","streetAddress":"Kuntalpadi","addressLocality":"Karkala","addressRegion":"Karnataka","postalCode":"574104","addressCountry":"IN"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:30","closes":"15:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"19:00","closes":"23:00"}]}
+</script>
+</head>
+<body>
+<header class="top" id="top">
+  <a class="brand" href="#">The Golden Spoon</a>
+  <a class="call" id="callTop" href="#visit">Visit us</a>
+</header>
+
+<section class="hero">
+  <div class="frame"></div>
+  <div class="hero-in">
+    <p class="hello" id="hHello"></p>
+    <h1 id="hName"></h1>
+    <div class="orn"><span></span><i>❖</i><span></span></div>
+    <p class="tagline" id="hTag"></p>
+    <p class="intro" id="hIntro"></p>
+    <p class="status" id="hStatus"></p>
+    <div class="badges" id="hBadges"></div>
+    <div class="hbtn"><a class="btn" href="#menu">Take a look at the menu</a><button class="btn ghost" id="surprise" type="button">Surprise me</button></div>
+  </div>
+</section>
+
+<section class="sigs" id="sigsWrap">
+  <p class="hello sm">Our signatures</p>
+  <h2>The dishes that carry our name</h2>
+  <div class="strip" id="sigs"></div>
+</section>
+
+<div class="tools" id="tools">
+  <div class="tools-in">
+    <input id="q" type="search" placeholder="What are you in the mood for?" aria-label="Search a dish" autocomplete="off">
+    <div class="seg" id="diet" role="group" aria-label="Diet filter">
+      <button data-d="all" class="on">All</button><button data-d="1"><i class="dot v"></i>Veg</button><button data-d="0"><i class="dot n"></i>Non-veg</button>
+    </div>
+  </div>
+  <nav class="cats" id="cats" aria-label="Menu categories"></nav>
+</div>
+
+<main id="menu"></main>
+<p class="empty" id="empty" hidden>We couldn’t find that one. Try another word, or simply ask us at the table.</p>
+
+<section class="visit" id="visit">
+  <div class="visit-in">
+    <div>
+      <h2 id="vTitle"></h2>
+      <p class="vt" id="vText"></p>
+      <address id="vAddr"></address>
+      <dl id="vHours"></dl>
+      <ul id="vFac"></ul>
+      <div class="ctas"><a class="btn" id="vCall" href="#">Call</a><a class="btn wa" id="vWa" href="#">WhatsApp</a><a class="btn ghost" id="vMap" href="#" target="_blank" rel="noopener">Open in Maps</a></div>
+    </div>
+    <iframe id="vFrame" title="Map to The Golden Spoon" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+<footer id="foot"></footer>
+
+<div class="ov" id="ov" hidden>
+  <div class="pop" role="dialog" aria-modal="true" aria-labelledby="pName">
+    <button class="x" id="px" aria-label="Close">✕</button>
+    <div class="pim" id="pim"></div>
+    <div class="pb">
+      <p class="pk" id="pk"></p>
+      <h2 id="pName"></h2>
+      <p class="pd" id="pd"></p>
+      <p class="pp" id="pp"></p>
+      <button class="snd" id="snd"><span class="ic" id="sic">▶</span><span id="stx">Listen to this dish</span><span class="eq"><s></s><s></s><s></s><s></s></span></button>
+      <div class="prog"><div id="bar"></div></div>
+      <div class="nav"><button id="prev">← Previous</button><button id="next">Next →</button></div>
+    </div>
+  </div>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

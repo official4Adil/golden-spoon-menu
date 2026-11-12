@@ -98,14 +98,13 @@ $('#diet').onclick = e => {
   state.diet = b.dataset.d;
   document.querySelectorAll('#diet button').forEach(x => x.classList.toggle('on', x === b));
   
-/* signatures strip + surprise me */
+/* signatures strip */
 function openItem(id) {
   if (!view.some(i => i.id === id)) { state.q = ''; state.diet = 'all'; $('#q').value = ''; document.querySelectorAll('#diet button').forEach(x => x.classList.toggle('on', x.dataset.d === 'all')); render(); }
   openPop(view.findIndex(i => i.id === id)); $('#px').focus();
 }
 $('#sigs').innerHTML = ITEMS.filter(i => i.sig).map(it => `<button class="sc" data-id="${it.id}"><div class="im">${img(it)}</div><h4>${esc(it.n)}</h4><span>${esc(it.sec.replace(': ', ' · '))}${fmt(it.price) ? ' · ' + esc(fmt(it.price)) : ''}</span></button>`).join('');
 $('#sigs').onclick = e => { const b = e.target.closest('.sc'); if (b) openItem(b.dataset.id); };
-$('#surprise').onclick = () => openItem(ITEMS[Math.floor(Math.random() * ITEMS.length)].id);
 
 render();
 };
